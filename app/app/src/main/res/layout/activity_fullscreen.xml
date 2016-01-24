@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="cc.virk.cornapp.FullscreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/bg1">
+
+        <ImageView
+            android:id="@+id/rectimage"
+            android:layout_height="575px"
+            android:layout_width="fill_parent"
+            android:src="@drawable/rectangle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="225px"
+            android:layout_marginLeft="85px"
+            android:layout_marginRight="85px">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/logoplaceholder"
+            android:layout_height="185px"
+            android:src="@drawable/logoplaceholder"
+            android:layout_width="185px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="133px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hello"
+            android:id="@+id/textView"
+            android:layout_below="@+id/logoplaceholder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45px"
+            android:textColor="#FFD4D9"
+            android:textSize="28dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:id="@+id/editText"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/rectimage"
+            android:layout_alignEnd="@+id/rectimage"
+            android:layout_marginLeft="77px"
+            android:layout_marginRight="77px"
+            android:layout_marginTop="45px"
+            android:background="#FFFFFF"
+            android:editable="true"
+            android:textColor="#A6AAA9"
+            android:textSize="28px"
+            android:paddingStart="20px"
+            android:hint="username"
+            android:textColorHint="#A6AAA9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:id="@+id/editText2"
+            android:layout_marginLeft="77px"
+            android:layout_marginRight="77px"
+            android:layout_marginTop="25px"
+            android:background="#FFFFFF"
+            android:editable="true"
+            android:textColor="#A6AAA9"
+            android:textSize="28px"
+            android:paddingStart="20px"
+            android:layout_below="@+id/editText"
+            android:layout_alignStart="@+id/rectimage"
+            android:layout_alignEnd="@+id/rectimage"
+            android:hint="password"
+            android:password="true"
+            android:textColorHint="#A6AAA9" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:text="Login"
+            android:id="@+id/button"
+            android:layout_below="@+id/editText2"
+            android:layout_alignStart="@+id/rectimage"
+            android:layout_alignEnd="@+id/rectimage"
+            android:layout_marginLeft="77px"
+            android:layout_marginRight="77px"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="#B54141"
+            android:layout_marginTop="25px"
+            android:textColor="#FFFFFF"
+            android:textSize="28px"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="loginButtonClickHandler"
+            android:nestedScrollingEnabled="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox"
+            android:textColor="#FFD4D9"
+            android:textAlignment="textStart"
+            android:checked="false"
+            android:layout_below="@+id/button"
+            android:layout_alignEnd="@+id/button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Remember me"
+            android:id="@+id/textView2"
+            android:layout_toStartOf="@+id/checkBox"
+            android:layout_below="@+id/button"
+            android:layout_alignBottom="@+id/rectimage"
+            android:textColor="#FFD4D9"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/button2"
+            android:background="#B54141"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_below="@+id/rectimage"
+            android:layout_alignEnd="@+id/logoplaceholder"
+            android:layout_alignStart="@+id/rectimage"
+            android:layout_marginRight="110px"
+            android:layout_marginTop="45px"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lost Password"
+            android:id="@+id/button3"
+            android:background="#B54141"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignEnd="@+id/rectimage"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_alignStart="@+id/logoplaceholder"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="45px"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</FrameLayout>
